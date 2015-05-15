@@ -17,28 +17,15 @@
     <!-- 
     <script type="text/javascript" src="chg_alert.js"></script>
      --> 
+    <script type="text/javascript" src="btn_strt.js"></script>
+<style type="text/css"> 
+</style> 
   </head>
 
   <body>
     <div class="container">
       <h1>Number Hit</h1>
     
-      <h2>ルール</h2>
-        <ul>
-            <li>
-              <p>数当てゲームです。ランダムに配置された4つの数字を当てて下さい。</p>
-            </li>
-            <li>
-              <p>試行回数は15回です。</p>
-            </li>
-            <li>
-              <p>15回で数値を推理出来ないければ"負け"になります。</p>
-            </li>
-            <li>
-              <p>数字が四桁の中に含まれていれば"Ball"、数字の場所まで一致していれば"Strike"の判定になります。</p>
-            </li>
-        </ul>
-
       <div class="col-md-4">
         <table class="table">
           <caption>推理結果</caption>
@@ -53,100 +40,150 @@
           <tbody>
             <tr>
               <th scope="row">1</th>
-              <td>Mark</td>
-              <td>Otto</td>
-              <td>@mdo</td>
+              <td id="ans_01"></td>
+              <td id="strike_01"></td>
+              <td id="ball_01"></td>
             </tr>
             <tr>
               <th scope="row">2</th>
-              <td>Jacob</td>
-              <td>Thornton</td>
-              <td>@fat</td>
+              <td id="ans_02"></td>
+              <td id="strike_02"></td>
+              <td id="ball_02"></td>
             </tr>
             <tr>
               <th scope="row">3</th>
-              <td>Larry</td>
-              <td>the Bird</td>
-              <td>@twitter</td>
+              <td id="ans_03"></td>
+              <td id="strike_03"></td>
+              <td id="ball_03"></td>
             </tr>
             <tr>
               <th scope="row">4</th>
-              <td></td>
-              <td></td>
-              <td></td>
+              <td id="ans_04"></td>
+              <td id="strike_04"></td>
+              <td id="ball_04"></td>
             </tr>
             <tr>
               <th scope="row">5</th>
-              <td></td>
-              <td></td>
-              <td></td>
+              <td id="ans_05"></td>
+              <td id="strike_05"></td>
+              <td id="ball_05"></td>
             </tr>
             <tr>
               <th scope="row">6</th>
-              <td></td>
-              <td></td>
-              <td></td>
+              <td id="ans_06"></td>
+              <td id="strike_06"></td>
+              <td id="ball_06"></td>
             </tr>
             <tr>
               <th scope="row">7</th>
-              <td></td>
-              <td></td>
-              <td></td>
+              <td id="ans_07"></td>
+              <td id="strike_07"></td>
+              <td id="ball_07"></td>
             </tr>
             <tr>
               <th scope="row">8</th>
-              <td></td>
-              <td></td>
-              <td></td>
+              <td id="ans_08"></td>
+              <td id="strike_08"></td>
+              <td id="ball_08"></td>
             </tr>
             <tr>
               <th scope="row">9</th>
-              <td></td>
-              <td></td>
-              <td></td>
+              <td id="ans_09"></td>
+              <td id="strike_09"></td>
+              <td id="ball_09"></td>
             </tr>
             <tr>
               <th scope="row">10</th>
-              <td></td>
-              <td></td>
-              <td></td>
+              <td id="ans_10"></td>
+              <td id="strike_10"></td>
+              <td id="ball_10"></td>
             </tr>
             <tr>
               <th scope="row">11</th>
-              <td></td>
-              <td></td>
-              <td></td>
+              <td id="ans_11"></td>
+              <td id="strike_11"></td>
+              <td id="ball_11"></td>
             </tr>
             <tr>
               <th scope="row">12</th>
-              <td></td>
-              <td></td>
-              <td></td>
+              <td id="ans_12"></td>
+              <td id="strike_12"></td>
+              <td id="ball_12"></td>
             </tr>
             <tr>
               <th scope="row">13</th>
-              <td></td>
-              <td></td>
-              <td></td>
+              <td id="ans_13"></td>
+              <td id="strike_13"></td>
+              <td id="ball_13"></td>
             </tr>
             <tr>
               <th scope="row">14</th>
-              <td></td>
-              <td></td>
-              <td></td>
+              <td id="ans_14"></td>
+              <td id="strike_14"></td>
+              <td id="ball_14"></td>
             </tr>
             <tr>
               <th scope="row">15</th>
-              <td></td>
-              <td></td>
-              <td></td>
+              <td id="ans_15"></td>
+              <td id="strike_15"></td>
+              <td id="ball_15"></td>
             </tr>
           </tbody>
         </table>
       </div>
       
-      <div class="col-md-8">.col-md-8</div>
-
+      <div class="col-md-8">
+        <h2>ルール</h2>
+        <ul>
+            <li>
+              <p>数当てゲームです。ランダムに配置された4つの数字を当てて下さい。</p>
+            </li>
+            <li>
+              <p>試行回数は15回です。</p>
+            </li>
+            <li>
+              <p>15回で数値を推理出来ないければ"負け"になります。</p>
+            </li>
+            <li>
+              <p>数字が四桁の中に含まれていれば"Ball"、数字の場所まで一致していれば"Strike"の判定になります。</p>
+            </li>
+        </ul>
+      </div>
+      <div class="col-md-6 col-md-offset-1">
+        <table class="table">
+          <tr>
+            <td>
+              <button type="button" class="btn btn-default" onclick="btn_strt()" name="strt" style="width:175px; font-size:150%;">
+                start
+                <span class="glyphicon glyphicon-ok-sign"></span>
+              </button>
+            </td>
+            <td>
+              <form name="gameStart">
+                <input type="password" name="num_ans" style="width:100px; font-size:200%;"/>
+              </form>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="number" value="0" name="digit_1" step="1" min="0" max="9" autocomplete="on" style="width:45px; font-size:200%;"/>
+              <input type="number" value="0" name="digit_2" step="1" min="0" max="9" autocomplete="on" style="width:45px; font-size:200%;"/>
+              <input type="number" value="0" name="digit_3" step="1" min="0" max="9" autocomplete="on" style="width:45px; font-size:200%;"/>
+              <input type="number" value="0" name="digit_4" step="1" min="0" max="9" autocomplete="on" style="width:45px; font-size:200%;"/>
+            </td>
+            <td>
+              <button type="button" class="btn btn-default" onclick="btn_sbmt()" style="font-size:125%;">
+                submit
+                <span class="glyphicon glyphicon-share-alt"></span>
+              </button>
+              <button type="button" class="btn btn-default" onclick="btn_cler()" style="font-size:125%;">
+                clear
+                <span class="glyphicon glyphicon-refresh"></span>
+              </button>
+            </td>
+          </tr>
+        </table>
+      </div>
     </div>
 
 
