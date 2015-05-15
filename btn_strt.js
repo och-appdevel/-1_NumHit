@@ -1,9 +1,7 @@
 function btn_strt(){
-  var result = "NG";
-  var test = 0;
-console.log("CHK8 typeof result = " + typeof result);
+  var result = 1;
 
-  while ( result !== "OK" || test < 10 ){
+  while ( result != 0 ){
 //乱数で四桁を設定
     var rum = Math.floor(Math.random() * 10000 ); 
 
@@ -25,14 +23,13 @@ console.log("CHK2 numCheck = " + numCheck);
       var j = i + 1;
 console.log("CHK3 numCheck[i] = " + numCheck[i]);
 console.log("CHK4 numCheck[j] = " + numCheck[j]);
-      if ( numCheck[i] != numCheck[j] ){
-        var result = "OK";
-      } else {
-        var result = "NG";
+      if ( numCheck[i] == numCheck[j] ){
+        result = 1;
         break;
+      } else {
+        result = 0;
       }
     }
-  test++;
 console.log("CHK5 result = " + result);
   }
 
