@@ -18,6 +18,8 @@
     <script type="text/javascript" src="chg_alert.js"></script>
      --> 
     <script type="text/javascript" src="btn_strt.js"></script>
+    <script type="text/javascript" src="btn_sbmt.js"></script>
+    <script type="text/javascript" src="btn_cler.js"></script>
 <style type="text/css"> 
 </style> 
   </head>
@@ -27,6 +29,7 @@
       <h1>Number Hit</h1>
     
       <div class="col-md-4">
+        <form name="anserResult">
         <table class="table">
           <caption>推理結果</caption>
           <thead>
@@ -40,96 +43,97 @@
           <tbody>
             <tr>
               <th scope="row">1</th>
-              <td id="ans_01"></td>
-              <td id="strike_01"></td>
-              <td id="ball_01"></td>
+              <td id="ans_1" name="anserResult_ans_1"></td>
+              <td id="strike_1" name="anserResult_strike_1"></td>
+              <td id="ball_1" name="anserResult_ball_1"></td>
             </tr>
             <tr>
               <th scope="row">2</th>
-              <td id="ans_02"></td>
-              <td id="strike_02"></td>
-              <td id="ball_02"></td>
+              <td id="ans_2" name="anserResult_ans_2"></td>
+              <td id="strike_2" name="anserResult_strike_2"></td>
+              <td id="ball_2" name="anserResult_ball_2"></td>
             </tr>
             <tr>
               <th scope="row">3</th>
-              <td id="ans_03"></td>
-              <td id="strike_03"></td>
-              <td id="ball_03"></td>
+              <td id="ans_3" name="anserResult_ans_3"></td>
+              <td id="strike_3" name="anserResult_strike_3"></td>
+              <td id="ball_3" name="anserResult_ball_3"></td>
             </tr>
             <tr>
               <th scope="row">4</th>
-              <td id="ans_04"></td>
-              <td id="strike_04"></td>
-              <td id="ball_04"></td>
+              <td id="ans_4" name="anserResult_ans_4"></td>
+              <td id="strike_4" name="anserResult_strike_4"></td>
+              <td id="ball_4" name="anserResult_ball_4"></td>
             </tr>
             <tr>
               <th scope="row">5</th>
-              <td id="ans_05"></td>
-              <td id="strike_05"></td>
-              <td id="ball_05"></td>
+              <td id="ans_5" name="anserResult_ans_5"></td>
+              <td id="strike_5" name="anserResult_strike_5"></td>
+              <td id="ball_5" name="anserResult_ball_5"></td>
             </tr>
             <tr>
               <th scope="row">6</th>
-              <td id="ans_06"></td>
-              <td id="strike_06"></td>
-              <td id="ball_06"></td>
+              <td id="ans_6" name="anserResult_ans_6"></td>
+              <td id="strike_6" name="anserResult_strike_6"></td>
+              <td id="ball_6" name="anserResult_ball_6"></td>
             </tr>
             <tr>
               <th scope="row">7</th>
-              <td id="ans_07"></td>
-              <td id="strike_07"></td>
-              <td id="ball_07"></td>
+              <td id="ans_7" name="anserResult_ans_7"></td>
+              <td id="strike_7" name="anserResult_strike_7"></td>
+              <td id="ball_7" name="anserResult_ball_7"></td>
             </tr>
             <tr>
               <th scope="row">8</th>
-              <td id="ans_08"></td>
-              <td id="strike_08"></td>
-              <td id="ball_08"></td>
+              <td id="ans_8" name="anserResult_ans_8"></td>
+              <td id="strike_8" name="anserResult_strike_8"></td>
+              <td id="ball_8" name="anserResult_ball_8"></td>
             </tr>
             <tr>
               <th scope="row">9</th>
-              <td id="ans_09"></td>
-              <td id="strike_09"></td>
-              <td id="ball_09"></td>
+              <td id="ans_9" name="anserResult_ans_9"></td>
+              <td id="strike_9" name="anserResult_strike_9"></td>
+              <td id="ball_9" name="anserResult_ball_9"></td>
             </tr>
             <tr>
               <th scope="row">10</th>
-              <td id="ans_10"></td>
-              <td id="strike_10"></td>
-              <td id="ball_10"></td>
+              <td id="ans_10" name="anserResult_ans_10"></td>
+              <td id="strike_10" name="anserResult_strike_10"></td>
+              <td id="ball_10" name="anserResult_ball_10"></td>
             </tr>
             <tr>
               <th scope="row">11</th>
-              <td id="ans_11"></td>
-              <td id="strike_11"></td>
-              <td id="ball_11"></td>
+              <td id="ans_11" name="anserResult_ans_11"></td>
+              <td id="strike_11" name="anserResult_strike_11"></td>
+              <td id="ball_11" name="anserResult_ball_11"></td>
             </tr>
             <tr>
               <th scope="row">12</th>
-              <td id="ans_12"></td>
-              <td id="strike_12"></td>
-              <td id="ball_12"></td>
+              <td id="ans_12" name="anserResult_ans_12"></td>
+              <td id="strike_12" name="anserResult_strike_12"></td>
+              <td id="ball_12" name="anserResult_ball_12"></td>
             </tr>
             <tr>
               <th scope="row">13</th>
-              <td id="ans_13"></td>
-              <td id="strike_13"></td>
-              <td id="ball_13"></td>
+              <td id="ans_13" name="anserResult_ans_13"></td>
+              <td id="strike_13" name="anserResult_strike_13"></td>
+              <td id="ball_13" name="anserResult_ball_13"></td>
             </tr>
             <tr>
               <th scope="row">14</th>
-              <td id="ans_14"></td>
-              <td id="strike_14"></td>
-              <td id="ball_14"></td>
+              <td id="ans_14" name="anserResult_ans_14"></td>
+              <td id="strike_14" name="anserResult_strike_14"></td>
+              <td id="ball_14" name="anserResult_ball_14"></td>
             </tr>
             <tr>
               <th scope="row">15</th>
-              <td id="ans_15"></td>
-              <td id="strike_15"></td>
-              <td id="ball_15"></td>
+              <td id="ans_15" name="anserResult_ans_15"></td>
+              <td id="strike_15" name="anserResult_strike_15"></td>
+              <td id="ball_15" name="anserResult_ball_15"></td>
             </tr>
           </tbody>
         </table>
+        </form>
       </div>
       
       <div class="col-md-8">
@@ -166,10 +170,12 @@
           </tr>
           <tr>
             <td>
-              <input type="number" value="0" name="digit_1" step="1" min="0" max="9" autocomplete="on" style="width:45px; font-size:200%;"/>
-              <input type="number" value="0" name="digit_2" step="1" min="0" max="9" autocomplete="on" style="width:45px; font-size:200%;"/>
-              <input type="number" value="0" name="digit_3" step="1" min="0" max="9" autocomplete="on" style="width:45px; font-size:200%;"/>
-              <input type="number" value="0" name="digit_4" step="1" min="0" max="9" autocomplete="on" style="width:45px; font-size:200%;"/>
+              <form name="input">
+                <input type="number" value="0" name="digit_0" step="1" min="0" max="9" autocomplete="on" style="width:45px; font-size:200%;"/>
+                <input type="number" value="0" name="digit_1" step="1" min="0" max="9" autocomplete="on" style="width:45px; font-size:200%;"/>
+                <input type="number" value="0" name="digit_2" step="1" min="0" max="9" autocomplete="on" style="width:45px; font-size:200%;"/>
+                <input type="number" value="0" name="digit_3" step="1" min="0" max="9" autocomplete="on" style="width:45px; font-size:200%;"/>
+              </form>
             </td>
             <td>
               <button type="button" class="btn btn-default" onclick="btn_sbmt()" style="font-size:125%;">

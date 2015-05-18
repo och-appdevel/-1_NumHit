@@ -35,5 +35,6 @@ console.log("CHK5 result = " + result);
 
   var Number = ( num1 + num2 + num3 + num4 );
 console.log("CHK6 Number = " + Number);
+console.log("------------------------------" + "\n" + "\n");
   document.gameStart.num_ans.value=Number;
 }
